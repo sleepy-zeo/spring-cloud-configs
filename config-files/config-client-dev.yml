@@ -1,0 +1,23 @@
+server:
+ port: 9000
+ servlet:
+  context-path: /config
+
+spring:
+ application:
+  name: eureka-client-config
+
+eureka:
+ instance:
+  instance-id: ${spring.application.name}:localhost:${server.port}
+ client:
+  register-with-eureka: true
+  fetch-registry: true
+  service-url:
+   defaultZone: http://localhost:1124/server/eureka/
+
+hystrix:
+ dashboard:
+  proxy-stream-allow-list:
+   - desktop-9la2t3c
+   - localhost
