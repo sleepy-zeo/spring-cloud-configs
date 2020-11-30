@@ -21,3 +21,5 @@ hystrix:
   proxy-stream-allow-list:
    - desktop-9la2t3c
    - localhost
+
+info: config-client-info
