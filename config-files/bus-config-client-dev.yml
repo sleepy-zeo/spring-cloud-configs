@@ -1,5 +1,5 @@
 server:
- port: 7223
+ port: 8900
  servlet:
   context-path: /bus-config
 
@@ -22,4 +22,4 @@ hystrix:
    - desktop-9la2t3c
    - localhost
 
-info: bus-config-client-info-8876
+info: bus-config-client-info-12345678
