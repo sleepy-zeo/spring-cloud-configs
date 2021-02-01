@@ -1,3 +1,6 @@
+server:
+ port: 23345
+
 eureka:
  instance:
   instance-id: ${spring.application.name}:localhost:${server.port}
